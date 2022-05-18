@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,146 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
 
-    
+<body>
+    <div class="container-fluid d-none d-lg-flex justify-content-lg-center blur mainLogo">
+        <img class="logo" src="img/logo-placeholder-image.png" alt="Kronos Coding Solutions logo">
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark blur shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none w-50" href="#">
+                <img class="img-fluid logo" src="img/KRONOS-editblur.png" alt="Kronos logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container-lg" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto justify-content-between mb-2 mb-lg-0 fs-4 w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active aqua" aria-current="page" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="faqs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="aboutus.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="#">Our story</a></li>
+                            <li><a class="dropdown-item" href="#">Our workplace</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gradientTitle container-fluid d-flex justify-content-center align-content-center mt-5 mb-md-5 blur">
+        <p class="fs-1 text-white fw-bold mb-0 py-2">Featured Services:</p>
+    </div>
+    <div id="featuredServices" class="col-11 mx-auto row g-0">
+        <div class="service col-12 col-md-5 my-5 d-flex flex-column justify-content-between">
+            <p class="aqua fs-1 text-center title fw-bold">CC: Code Counseling</p>
+            <p class="text-white px-3 fw-light">Clients with programming difficulties can convey them to our skilled
+                programming
+                team via Zoom or a brief email. The issue at hand will become our top priority, as we assess the
+                problem and provide you with a path to the most effective solution. For a more detailed description
+                of the service and its pricing, visit our <a class="aqua" href="services.html">Services</a> section
+                or click the button below:</p>
+                <div class="text-center">
+                    <p class="fs-3 text-white">PRICE: <span class="priceTag text-warning rounded-3 p-2 fw-bold">59.99 USD</span></p>
+                </div>
+            <a href="services.html"><button class="customBtn cardBtn">HIRE</button></a>
+        </div>
+        <div class="service col-12 offset-md-2 col-md-5 my-md-5 d-flex flex-column justify-content-between">
+            <p class="aqua fs-1 text-center title fw-bold">CD: Code Delivery</p>
+            <p class="text-white px-3 fw-light">Our experts realize your time is precious. That's why we offer our
+                Code Delivery service, which enables you to send blocks of code through our platform for us to work
+                on. Bug fixing, problem solving; you name it. Just press 'Send' and let us do the heavy work for
+                you. For a more detailed description of the service and its pricing, visit our <a class="aqua"
+                    href="services.html">Services</a> section or click the button below:</p>
+                    <div class="text-center">
+                        <p class="fs-3 text-white">PRICE: <span class="priceTag text-warning rounded-3 p-2 fw-bold">59.99 USD</span></p>
+                    </div>
+            <a href="services.html"><button class="customBtn cardBtn ">HIRE</button></a>
+        </div>
+    </div>
+
+    <div class="gradientTitle container-fluid d-flex justify-content-center align-content-center mt-5 mb-md-5 blur">
+        <p class="fs-1 text-white fw-bold mb-0 py-2">Exclusive Services:</p>
+    </div>
+    <div id="exclusiveServices" class="col-11 mx-auto row g-0">
+        <div class="service col-12 col-md-5 my-5 d-flex flex-column justify-content-between">
+            <p class="aqua fs-1 text-center title fw-bold">QA: Quality Assurance</p>
+            <p class="text-white px-3 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+                similique, porro incidunt voluptatibus adipisci ea nisi perferendis autem eligendi, fugiat ab quaerat
+                facere. Quaerat atque consequatur odit iusto temporibus. Vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam est, facere similique quas, repudiandae corporis cumque ullam atque at qui quisquam obcaecati quibusdam pariatur nobis laboriosam in blanditiis sit.</p>
+                <p class="ms-2 exclusiveInfo"><span class="text-danger fs-5">*</span>This service is only available in a bundle.</p>
+            <a href="services.html"><button class="customBtn cardBtn">SEE PLANS</button></a>
+        </div>
+        <div class="service col-12 offset-md-2 col-md-5 my-md-5 d-flex flex-column justify-content-between">
+            <p class="aqua fs-1 text-center title fw-bold">DA: Design Assessment</p>
+            <p class="text-white px-3 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veniam
+                cumque tempore, iure culpa, enim asperiores magni quod odio omnis unde commodi rerum sunt perferendis
+                tenetur nulla voluptates quaerat nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae vel quisquam, natus similique incidunt adipisci commodi voluptates quasi, dolorum ipsam aspernatur pariatur qui reprehenderit, consequuntur explicabo doloremque atque harum eius!</p>
+                <p class="ms-2 exclusiveInfo"><span class="text-danger fs-5">*</span>This service is only available in a bundle.</p>
+            <a href="services.html"><button class="customBtn cardBtn ">SEE PLANS</button></a>
+        </div>
+    </div>
+
+    <div id="example" class="col-10 col-md-8 col-lg-6 mx-auto grey my-5">
+        <div class="p-3 text-center">
+            <p class="text-white fw-light">Here at Kronos Coding Solutions, we believe in building a bridge of trust between our clients and our company. That's why we encourage you to take a quick look at this 'virtual tour' of our different services:</p>
+            <iframe class="img-fluid" src="https://www.youtube.com/embed/NQcZANRMc5I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="footer" class="container-fluid blur">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div id="social" class="col-5 col-md-4 d-flex justify-content-lg-evenly">
+                <a href="https://www.facebook.com" target="_blank"><img class="img-fluid" src="img/facebook.png"
+                        alt="Facebook logo"></a>
+                <a class="ms-3" href="https://www.twitter.com" target="_blank"><img class="img-fluid"
+                        src="img/twitter.png" alt="Twitter logo"></a>
+                <a class="ms-3" href="https://www.instagram.com" target="_blank"><img class="img-fluid"
+                        src="img/instagram.png" alt="Instagram logo"></a>
+            </div>
+            <div id="legal" class="offset-1 col-6 offset-md-4 col-md-4 d-flex justify-content-center mt-2">
+                <ul class="list-unstyled">
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="">Work Here</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Cookie Settings</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright" class="container-fluid">
+            <p class="mb-0 text-center text-white border-top py-2">© Website created by <a class="aqua"
+                    href="https://www.linkedin.com/in/santiago-brasca-750487234/" target="_blank">Santiago Brasca</a>
+            </p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

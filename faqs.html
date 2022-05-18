@@ -9,8 +9,77 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-
+    <div class="container-fluid d-none d-lg-flex justify-content-lg-center blur mainLogo">
+        <img class="logo" src="img/logo-placeholder-image.png" alt="Kronos Coding Solutions logo">
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark blur shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none w-50" href="#">
+                <img class="img-fluid logo" src="img/KRONOS-editblur.png" alt="Kronos logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container-lg" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto justify-content-between mb-2 mb-lg-0 fs-4 w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active aqua" aria-current="page" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="aboutus.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="#">Our story</a></li>
+                            <li><a class="dropdown-item" href="#">Our workplace</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
+    <div id="footer" class="container-fluid blur">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div id="social" class="col-5 col-md-4 d-flex justify-content-lg-evenly">
+                <a href="https://www.facebook.com" target="_blank"><img class="img-fluid" src="img/facebook.png"
+                        alt="Facebook logo"></a>
+                <a class="ms-3" href="https://www.twitter.com" target="_blank"><img class="img-fluid"
+                        src="img/twitter.png" alt="Twitter logo"></a>
+                <a class="ms-3" href="https://www.instagram.com" target="_blank"><img class="img-fluid"
+                        src="img/instagram.png" alt="Instagram logo"></a>
+            </div>
+            <div id="legal" class="offset-1 col-6 offset-md-4 col-md-4 d-flex justify-content-center mt-2">
+                <ul class="list-unstyled">
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="">Work Here</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Cookie Settings</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright" class="container-fluid">
+            <p class="mb-0 text-center text-white border-top py-2">© Website created by <a class="aqua"
+                    href="https://www.linkedin.com/in/santiago-brasca-750487234/" target="_blank">Santiago Brasca</a>
+            </p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

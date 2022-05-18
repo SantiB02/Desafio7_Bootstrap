@@ -30,11 +30,20 @@ body {
     width: 100.1%;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    margin-bottom: -1px;
+    margin: 0 -1px -1px -1px;
 }
 
 nav, .mainLogo {
     background-color: rgba(46, 45, 45, 0.474) !important;
+}
+
+nav .navbar-toggler {
+    border-color: aqua !important;
+    background-color: black !important;
+}
+
+nav .navbar-toggler-icon {
+    background-image: url(../img/menu-icon.png) !important;
 }
 
 .blur {
@@ -53,11 +62,19 @@ nav, .mainLogo {
     background-color: rgba(88, 83, 83, 0.527);
 }
 
+#legal a {
+    transition: all 300ms;
+}
+
+#legal a:hover {
+    color: aqua;
+}
+
 #welcome {
     height: 600px;
 }
 
-.featuredTitle {
+.gradientTitle {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 3%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 97%);
 }
 
@@ -78,15 +95,29 @@ nav, .mainLogo {
     border-top-right-radius: 20px;
 }
 
+.service .fw-light {
+    text-align: justify;
+}
+
 #footer {
     background-color: rgba(0, 255, 255, 0.323);
 }
 
 #social img {
-    width: 60px;
+    width: 50px;
 }
 
 #legal a {
     text-decoration: none;
      color: white;
+}
+
+/* The following code corresponds to services.html */
+
+.priceTag {
+    background-color: rgb(51, 51, 51);
+}
+
+.exclusiveInfo {
+    color: rgb(158, 158, 158);
 }
