@@ -117,6 +117,41 @@ nav .navbar-toggler-icon {
     text-align: justify;
 }
 
+#clientsCarousel {
+    max-width: 800px;
+}
+
+#clientsCarousel figcaption {
+    color: rgb(0, 255, 255);
+}
+
+#clientsCarousel .carousel-control-next,
+.carousel-control-prev {
+    bottom: 80px !important;
+}
+
+#clientsCarousel .carousel-control-next-icon {
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%2300FFFF'%3E%3Cpath d='M7.6 5.8c0 .4.1.7.4.9l4.6 4.3c.5.5.5 1.4 0 1.9L8 17.2c-.3.2-.4.6-.4.9 0 1.1 1.3 1.7 2.1.9l6.8-6.2c.6-.5.6-1.4 0-1.9l-6.8-6c-.8-.7-2.1-.1-2.1.9z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-size: 54px 54px;
+    padding: 25px;
+    border-radius: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+#clientsCarousel .carousel-control-prev-icon {
+    background-color: black;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%2300FFFF'%3E%3Cpath d='M16.4 18.2c0-.4-.1-.7-.4-.9L11.4 13c-.5-.5-.5-1.4 0-1.9L16 6.8c.3-.2.4-.6.4-.9 0-1.1-1.3-1.7-2.1-.9l-6.8 6.2c-.6.5-.6 1.4 0 1.9l6.8 6.2c.8.5 2.1-.1 2.1-1.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+padding: 25px;
+background-size: 54px 54px;
+border-radius: 30px;
+background-position: center center;
+background-repeat: no-repeat;
+
+
+}
+
 #footer {
     background-color: rgba(0, 255, 255, 0.323);
 }
@@ -127,7 +162,7 @@ nav .navbar-toggler-icon {
 
 #legal a {
     text-decoration: none;
-     color: white;
+    color: white;
 }
 
 /* The following code corresponds to services.html */
@@ -144,17 +179,17 @@ nav .navbar-toggler-icon {
 /* The following code corresponds to faqs.html */
 
 #questions .accordion-button::after {
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M18.2 7.6c-.4 0-.7.1-.9.4L13 12.6c-.5.5-1.4.5-1.9 0L6.8 8c-.3-.2-.6-.4-1-.4-1.1 0-1.7 1.3-.9 2.1l6.2 6.8c.5.6 1.4.6 1.9 0l6.2-6.8c.6-.8 0-2.1-1-2.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-background-size: 24px 24px;
-background-position: center center;
-background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M18.2 7.6c-.4 0-.7.1-.9.4L13 12.6c-.5.5-1.4.5-1.9 0L6.8 8c-.3-.2-.6-.4-1-.4-1.1 0-1.7 1.3-.9 2.1l6.2 6.8c.5.6 1.4.6 1.9 0l6.2-6.8c.6-.8 0-2.1-1-2.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-size: 24px 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%2300FFFF'%3E%3Cpath d='M18.2 7.6c-.4 0-.7.1-.9.4L13 12.6c-.5.5-1.4.5-1.9 0L6.8 8c-.3-.2-.6-.4-1-.4-1.1 0-1.7 1.3-.9 2.1l6.2 6.8c.5.6 1.4.6 1.9 0l6.2-6.8c.6-.8 0-2.1-1-2.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") !important;
-background-size: 24px 24px;
-background-position: center center;
-background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #questions .accordion-item {
@@ -215,16 +250,21 @@ background-repeat: no-repeat;
     height: 100px !important;
 }
 
-.form input, .form textarea, .form select {
+.form input,
+.form textarea,
+.form select {
     background-color: #3d3c3c !important;
     border: 1px solid aqua !important;
 }
 
-.form label, .form option, .form select {
+.form label,
+.form option,
+.form select {
     color: white !important;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
     color: aqua !important;
 }
 
