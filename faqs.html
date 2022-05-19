@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,18 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
     <div class="container-fluid d-none d-lg-flex justify-content-lg-center blur mainLogo">
-        <img class="logo" src="img/logo-placeholder-image.png" alt="Kronos Coding Solutions logo">
+        <a href="index.html" class="text-decoration-none d-flex flex-column align-items-center">
+            <img class="logo img-fluid" src="img/KronosLOGO.png" alt="Kronos Coding Solutions logo">
+            <p class="mainTitle aqua fs-1">Kronos Coding Solutions</p>
+        </a>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark blur shadow">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand d-lg-none w-50" href="#">
-                <img class="img-fluid logo" src="img/KRONOS-editblur.png" alt="Kronos logo">
+            <a class="navbar-brand d-lg-none w-25" href="index.html">
+                <img class="img-fluid phoneLogo" src="img/KronosLOGO.png" alt="Kronos logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -42,16 +47,94 @@
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="aboutus.html">Who we are</a></li>
-                            <li><a class="dropdown-item" href="#">Our story</a></li>
-                            <li><a class="dropdown-item" href="#">Our workplace</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#about">Who we are</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#story">Our story</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#workplace">Our workplace</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
+    <div class="col-11 mx-auto grey rounded-3 blur mb-5 mt-4 mt-lg-5">
+        <p class="text-white mainTitle fs-1 pt-3 text-center fw-bold">Frequently Asked Questions</p>
+        <div class="container-md accordion pb-5" id="questions">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How does it work?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        <p class="text-white fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente excepturi, odio
+                            accusamus eligendi blanditiis expedita cupiditate minima veritatis sequi voluptatibus
+                            aliquid, cumque totam ullam id corrupti eos. Porro, quam officia. Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Perspiciatis, quae, harum cumque tempore consequuntur hic
+                            nisi quod dicta facere sit, similique temporibus! Nobis a quam dolorum quo quibusdam
+                            aspernatur officiis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Can I try a service first?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        <p class="text-white fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel distinctio, quidem fugit non
+                            odio officiis sed suscipit impedit atque sit voluptas inventore? Explicabo, quisquam
+                            consectetur perferendis impedit enim tempora dolore. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Id, eos. Sunt, rem animi praesentium illum nobis, temporibus nam dolores
+                            voluptates impedit iste est error autem culpa laudantium iusto exercitationem! Eaque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I send unlimited code?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        <p class="text-white fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum, illo accusamus
+                            explicabo ipsam quo magni quos id sequi, repellat exercitationem quibusdam modi quod, non
+                            impedit ea eos nihil distinctio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Are refunds available?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        <p class="text-white fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum, illo accusamus
+                            explicabo ipsam quo magni quos id sequi, repellat exercitationem quibusdam modi quod, non
+                            impedit ea eos nihil distinctio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center pb-5">
+            <a href="contactus.html"><button class="customBtn rounded-3">Missing question? Let us know!</button></a>
+        </div>
+    </div>
+
     <div id="footer" class="container-fluid blur">
         <div class="container d-flex align-items-center justify-content-between">
             <div id="social" class="col-5 col-md-4 d-flex justify-content-lg-evenly">
@@ -68,7 +151,7 @@
                     <li><a href="">Work Here</a></li>
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms of Service</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                     <li><a href="">Cookie Settings</a></li>
                     <li><a href="">Cookie Policy</a></li>
                 </ul>
@@ -85,4 +168,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

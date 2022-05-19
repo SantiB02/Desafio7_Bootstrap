@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -21,9 +22,17 @@ body {
     background: #0cd8df;
 }
 
+.mainTitle {
+    font-family: 'Akshar', sans-serif;
+}
+
 .customBtn:hover {
     background: #fff;
     color: #0cd8df;
+}
+
+.customBtn.bg-secondary:hover {
+    background-color: white !important;
 }
 
 .cardBtn {
@@ -33,8 +42,13 @@ body {
     margin: 0 -1px -1px -1px;
 }
 
-nav, .mainLogo {
-    background-color: rgba(46, 45, 45, 0.474) !important;
+nav {
+    background-color: rgba(46, 45, 45, 0.474);
+    backdrop-filter: blur(10px);
+}
+
+.mainLogo {
+    background-color: rgba(0, 28, 28, 0.482);
 }
 
 nav .navbar-toggler {
@@ -51,6 +65,10 @@ nav .navbar-toggler-icon {
 }
 
 .logo {
+    max-width: 150px;
+}
+
+.phoneLogo {
     max-width: 80px;
 }
 
@@ -116,8 +134,119 @@ nav .navbar-toggler-icon {
 
 .priceTag {
     background-color: rgb(51, 51, 51);
+    font-family: 'Akshar', sans-serif;
 }
 
 .exclusiveInfo {
     color: rgb(158, 158, 158);
+}
+
+/* The following code corresponds to faqs.html */
+
+#questions .accordion-button::after {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23FFFFFF'%3E%3Cpath d='M18.2 7.6c-.4 0-.7.1-.9.4L13 12.6c-.5.5-1.4.5-1.9 0L6.8 8c-.3-.2-.6-.4-1-.4-1.1 0-1.7 1.3-.9 2.1l6.2 6.8c.5.6 1.4.6 1.9 0l6.2-6.8c.6-.8 0-2.1-1-2.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+background-size: 24px 24px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%2300FFFF'%3E%3Cpath d='M18.2 7.6c-.4 0-.7.1-.9.4L13 12.6c-.5.5-1.4.5-1.9 0L6.8 8c-.3-.2-.6-.4-1-.4-1.1 0-1.7 1.3-.9 2.1l6.2 6.8c.5.6 1.4.6 1.9 0l6.2-6.8c.6-.8 0-2.1-1-2.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") !important;
+background-size: 24px 24px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+#questions .accordion-item {
+    border-left: 1px solid rgb(0, 255, 255) !important;
+    border-right: 1px solid aqua !important;
+    border-bottom: 1px solid aqua !important;
+}
+
+#questions .accordion-item:first-child {
+    border-top: 1px solid aqua !important;
+}
+
+#questions .accordion-button:not(.collapsed) {
+    color: aqua;
+}
+
+#questions .accordion-button {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media all and (min-width: 576px) {
+    #questions .accordion-button {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #questions .accordion-button {
+        font-size: 2rem;
+    }
+}
+
+#questions .accordion-body {
+    background-color: rgb(21, 74, 74);
+    text-align: justify;
+}
+
+/* The following code corresponds to contactus.html */
+
+.contactPrompt {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+@media all and (min-width: 576px) {
+    .contactPrompt {
+        font-size: 1.5rem;
+    }
+}
+
+.form {
+    background-color: rgba(21, 74, 74, 0.499);
+    border-radius: 20px;
+}
+
+.form textarea {
+    height: 100px !important;
+}
+
+.form input, .form textarea, .form select {
+    background-color: #3d3c3c !important;
+    border: 1px solid aqua !important;
+}
+
+.form label, .form option, .form select {
+    color: white !important;
+}
+
+.form input, .form textarea {
+    color: aqua !important;
+}
+
+.form-check-input:checked {
+    background-color: rgb(6, 178, 178) !important;
+}
+
+/* The following code corresponds to aboutus.html */
+
+.helloWorld {
+    max-width: 320px;
+    opacity: .8;
+}
+
+.fw-light {
+    text-align: justify;
+}
+
+#about .aqua.mainTitle {
+    border-top: 1px solid aqua;
+}
+
+#who .aqua.mainTitle {
+    border-top: none;
 }

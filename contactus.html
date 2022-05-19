@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,18 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
     <div class="container-fluid d-none d-lg-flex justify-content-lg-center blur mainLogo">
-        <img class="logo" src="img/logo-placeholder-image.png" alt="Kronos Coding Solutions logo">
+        <a href="index.html" class="text-decoration-none d-flex flex-column align-items-center">
+            <img class="logo img-fluid" src="img/KronosLOGO.png" alt="Kronos Coding Solutions logo">
+            <p class="mainTitle aqua fs-1">Kronos Coding Solutions</p>
+        </a>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark blur shadow">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand d-lg-none w-50" href="#">
-                <img class="img-fluid logo" src="img/KRONOS-editblur.png" alt="Kronos logo">
+            <a class="navbar-brand d-lg-none w-25" href="index.html">
+                <img class="img-fluid phoneLogo" src="img/KronosLOGO.png" alt="Kronos logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -42,16 +47,90 @@
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="aboutus.html">Who we are</a></li>
-                            <li><a class="dropdown-item" href="#">Our story</a></li>
-                            <li><a class="dropdown-item" href="#">Our workplace</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#about">Who we are</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#story">Our story</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#workplace">Our workplace</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
+    <div class="contactPrompt col-10 col-md-8 col-lg-6 mx-auto grey my-5 blur">
+        <p class="text-white p-3">Have any <span class="aqua fw-bold">doubt, suggestion or question</span> for us? Feel
+            free to fill in the form below and one of our agents will provide an answer for you within 24 hours:</p>
+    </div>
+    <div class="form blur col-11 col-md-8 col-lg-6 mb-5 mx-auto">
+        <p class="fs-1 fw-bold mainTitle text-center aqua mb-0 py-2">Let's get in touch!</p>
+        <form action="contactus.html" method="POST">
+            <div class="row g-0">
+                <div class="col-md">
+                    <div class="form-floating mx-3 mx-lg-5 mb-3">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                        <label for="floatingInputGrid">First Name</label>
+                    </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="form-floating mx-3 mx-lg-5">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        <label for="floatingInputGrid">Last Name</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mb-3 mx-3 mx-lg-5">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="ms-3 ms-lg-5 mb-3">
+                <p class="mb-0 fs-5 text-white">Sex:</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" id="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" id="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" id="other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+            <div class="form-floating mb-3 mx-3 mx-lg-5">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" required>
+                    <option selected>Select</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="UnitedStates">United States</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+                <label for="floatingSelectGrid">Select your country</label>
+            </div>
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="form-floating mx-3 mx-lg-5 mb-3">
+                        <textarea class="form-control" placeholder="Comments/questions"
+                            id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comments/questions</label>
+                    </div>
+                </div>
+                <div class="col-md d-md-flex mb-3 align-items-md-center">
+                    <div class="form-check mx-3 mx-lg-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Receive Newsletter
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ms-md-3 ms-lg-5 pb-3 text-center text-md-start">
+                <button type="reset" class="customBtn rounded-3 me-3 bg-secondary">RESET</button>
+                <button type="submit" class="customBtn rounded-3">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
     <div id="footer" class="container-fluid blur">
         <div class="container d-flex align-items-center justify-content-between">
             <div id="social" class="col-5 col-md-4 d-flex justify-content-lg-evenly">
@@ -68,7 +147,7 @@
                     <li><a href="">Work Here</a></li>
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms of Service</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                     <li><a href="">Cookie Settings</a></li>
                     <li><a href="">Cookie Policy</a></li>
                 </ul>
@@ -85,4 +164,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,18 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
     <div class="container-fluid d-none d-lg-flex justify-content-lg-center blur mainLogo">
-        <img class="logo" src="img/logo-placeholder-image.png" alt="Kronos Coding Solutions logo">
+        <a href="index.html" class="text-decoration-none d-flex flex-column align-items-center">
+            <img class="logo img-fluid" src="img/KronosLOGO.png" alt="Kronos Coding Solutions logo">
+            <p class="mainTitle aqua fs-1">Kronos Coding Solutions</p>
+        </a>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark blur shadow">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand d-lg-none w-50" href="#">
-                <img class="img-fluid logo" src="img/KRONOS-editblur.png" alt="Kronos logo">
+            <a class="navbar-brand d-lg-none w-25" href="index.html">
+                <img class="img-fluid phoneLogo" src="img/KronosLOGO.png" alt="Kronos logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,20 +42,45 @@
                         <a class="nav-link text-white" href="contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active aqua" aria-current="page" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active aqua" aria-current="page" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Who we are</a></li>
-                            <li><a class="dropdown-item" href="#">Our story</a></li>
-                            <li><a class="dropdown-item" href="#">Our workplace</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#about">Who we are</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#story">Our story</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html#workplace">Our workplace</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container-sm blur d-flex justify-content-center">
+        <img class="img-fluid helloWorld" src="img/helloWorld.gif" alt="Hello World gif">
+    </div>
+    <div id="about" class="col-11 mx-auto grey rounded-3 blur mb-5">
+        <p class="text-white mainTitle fs-1 pt-3 text-center fw-bold">About Us</p>
+        <div id="who">
+            <p class="aqua mainTitle fs-1 mx-2 text-center">What is Kronos Coding Solutions?</p>
+            <p class="fw-light text-white px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reiciendis, voluptas rerum odio optio non magni eius perferendis qui tempora maxime quisquam maiores modi, necessitatibus dicta facere suscipit inventore laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero perferendis non totam provident mollitia eveniet minima dolores cum obcaecati. Totam quae cupiditate nostrum nemo molestiae quos aspernatur assumenda nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, deleniti reiciendis at dignissimos repellendus non! Non natus numquam veritatis aut officia obcaecati. Autem facilis sapiente dicta, aliquam at dolore repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe, est dolorem natus ab modi consectetur nam quisquam? Reprehenderit eos distinctio maxime iste vel error minima, culpa quibusdam officiis quod.</p>
+        </div>
+        <div id="story">
+            <p class="aqua mainTitle fs-1 mx-2 text-center">2015: The year that ignited our spark</p>
+            <p class="fw-light text-white px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reiciendis, voluptas rerum odio optio non magni eius perferendis qui tempora maxime quisquam maiores modi, necessitatibus dicta facere suscipit inventore laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero perferendis non totam provident mollitia eveniet minima dolores cum obcaecati. Totam quae cupiditate nostrum nemo molestiae quos aspernatur assumenda nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, deleniti reiciendis at dignissimos repellendus non! Non natus numquam veritatis aut officia obcaecati. Autem facilis sapiente dicta, aliquam at dolore repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe, est dolorem natus ab modi consectetur nam quisquam? Reprehenderit eos distinctio maxime iste vel error minima, culpa quibusdam officiis quod.</p>
+        </div>
+        <div id="workplace">
+            <p class="aqua mainTitle fs-1 mx-2 text-center">Our workplace</p>
+            <p class="fw-light text-white px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reiciendis, voluptas rerum odio optio non magni eius perferendis qui tempora maxime quisquam maiores modi, necessitatibus dicta facere suscipit inventore laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero perferendis non totam provident mollitia eveniet minima dolores cum obcaecati. Totam quae cupiditate nostrum nemo molestiae quos aspernatur assumenda nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, deleniti reiciendis at dignissimos repellendus non! Non natus numquam veritatis aut officia obcaecati. Autem facilis sapiente dicta, aliquam at dolore repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe, est dolorem natus ab modi consectetur nam quisquam? Reprehenderit eos distinctio maxime iste vel error minima, culpa quibusdam officiis quod.</p>
+            <div class="container-sm d-flex justify-content-center">
+                <figure class="figure">
+                    <img src="img/building.jpg" class="figure-img img-fluid rounded" alt="Office building">
+                    <figcaption class="figure-caption">Our office building in Stockholm, Sweden.</figcaption>
+                  </figure>
+            </div>
+        </div>
+    </div>
 
     <div id="footer" class="container-fluid blur">
         <div class="container d-flex align-items-center justify-content-between">
@@ -64,11 +94,11 @@
             </div>
             <div id="legal" class="offset-1 col-6 offset-md-4 col-md-4 d-flex justify-content-center mt-2">
                 <ul class="list-unstyled">
-                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="">Work Here</a></li>
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms of Service</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                     <li><a href="">Cookie Settings</a></li>
                     <li><a href="">Cookie Policy</a></li>
                 </ul>
@@ -85,4 +115,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
