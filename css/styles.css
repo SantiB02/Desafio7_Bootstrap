@@ -49,6 +49,7 @@ nav {
 
 .mainLogo {
     background-color: rgba(0, 28, 28, 0.482);
+    backdrop-filter: blur(10px);
 }
 
 nav .navbar-toggler {
@@ -166,6 +167,12 @@ background-repeat: no-repeat;
 
 #social img {
     width: 50px;
+}
+
+@media all and (max-width: 576px) {
+    #social p {
+        font-size: .8rem;
+    }
 }
 
 #legal a {
