@@ -1,0 +1,19 @@
+/* The following code corresponds to aboutus.html */
+
+.helloWorld{
+    max-width: 320px;
+    opacity: .8;
+}
+
+#about{
+    .fw-light{
+        text-align: justify;
+    }
+    .aqua.mainTitle{
+        border-top: 1px solid $mainColor;
+    }
+}
+
+#who .aqua.mainTitle {
+    border-top: none;
+}

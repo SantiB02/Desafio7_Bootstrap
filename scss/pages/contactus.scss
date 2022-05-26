@@ -1,0 +1,30 @@
+/* The following code corresponds to contactus.html */
+
+.contactPrompt{
+    font-size: 1rem;
+    text-align: justify;
+    @media all and (min-width: 576px) {
+        font-size: 1.5rem;
+    }
+}
+
+.form{
+    background-color: rgba(21, 74, 74, 0.499);
+    border-radius: 20px;
+    .textarea{
+        height: 100px !important;
+    }
+    input, textarea{
+        color: $mainColor !important;
+    }
+    input, textarea, select{
+        background-color: rgb(61, 60, 60) !important;
+        border: 1px solid $mainColor !important;
+    }
+    label, option, select{
+        color: white !important;
+    }
+    &-check-input:checked{
+        background-color: rgb(6, 178, 178) !important;
+    }
+}

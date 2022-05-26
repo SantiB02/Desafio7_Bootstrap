@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(117,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%233EFF0F'/%3E%3Cstop offset='1' stop-color='%231CE7FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(52,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2313F8FF'/%3E%3Cstop offset='1' stop-color='%2303FF43'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='6.27'%3E%3Cpath transform='translate(-24.85 4) rotate(2.05 1409 581) scale(1.0038829999999999)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='2.09' transform='translate(-20.5 16) rotate(3.3 800 450) scale(1.005993)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(9.6 -34.5) rotate(31.5 401 736) scale(1.005993)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1.9'%3E%3Cpath transform='translate(96 -3.4000000000000004) rotate(0.8500000000000001 150 345) scale(0.9899609999999999)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='4.18' transform='translate(-47.5 -41.5) rotate(36 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-79.2 24.8) rotate(6 1400 132) scale(0.985)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+.customBtn {
+    min-width: 130px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: black;
+    border: 2px solid $mainColor;
+    background: $mainColor;
+    &:hover{
+        background: white;
+        color: $mainColor;
+    }
+    &.cardBtn {
+        width: 100.1%;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        margin: 0 -1px -1px -1px;
+    }
+    &.bg-secondary:hover {
+        background-color: white !important;
+    }
+}
+
+.mainTitle {
+    font-family: 'Akshar', sans-serif;
+}
+
+.mainLogo {
+    background-color: rgba(0, 28, 28, 0.482);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    background-color: rgba(46, 45, 45, 0.474);
+    backdrop-filter: blur(10px);
+    .navbar-toggler{
+        border-color: $mainColor !important;
+        background-color: black !important;
+        &-icon{
+            background-image: url(../img/menu-icon.png)!important;
+        }
+    }
+}
+
+.blur {
+    backdrop-filter: blur(4px);
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.phoneLogo {
+    max-width: 80px;
+}
+
+.aqua {
+    color: $mainColor !important;
+}
+
+.grey {
+    background-color: rgba(88, 83, 83, 0.527);
+}
+
+#legal {
+    a{
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+        &:hover{
+            color: $mainColor;
+        }
+    }
+}
+
+.gradientTitle {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 3%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 97%);
+}
+
+#footer {
+    background-color: rgba(0, 255, 255, 0.323);
+}
+
+#social {
+    img{
+        width: 50px;
+    }
+    p{
+        @media all and (max-width: 576px) {
+            font-size: .8rem;
+        }
+    }
+}
