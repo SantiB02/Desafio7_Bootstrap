@@ -8,9 +8,9 @@
         "../scss/_common.scss",
         "../scss/pages/_index.scss",
         "../scss/pages/_services.scss",
-        "../scss/pages/faqs.scss",
-        "../scss/pages/contactus.scss",
-        "../scss/pages/aboutus.scss"
+        "../scss/pages/_faqs.scss",
+        "../scss/pages/_contactus.scss",
+        "../scss/pages/_aboutus.scss"
     ],
     "names": [],
     "file": "styles.css"
