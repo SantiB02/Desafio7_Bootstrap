@@ -1,2 +1,10 @@
 $textBG: rgb(21, 74, 74);
 $mainColor: aqua;
+$gradients: (
+    cardGradient: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 0%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 100%),
+    titleGradient: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 3%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 97%),
+);
+@mixin iconSizes($size, $padding) {
+    background-size: $size;
+    padding: $padding;
+}

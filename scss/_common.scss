@@ -18,17 +18,25 @@ body {
     border: 2px solid $mainColor;
     background: $mainColor;
     &:hover{
-        background: white;
+        background-color: white;
         color: $mainColor;
     }
-    &.cardBtn {
-        width: 100.1%;
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-        margin: 0 -1px -1px -1px;
-    }
-    &.bg-secondary:hover {
-        background-color: white !important;
+}
+
+.cardBtn {
+    @extend .customBtn;
+    width: 100.1%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 0 -1px -1px -1px;
+}
+
+.greyBtn {
+    @extend .customBtn;
+    background-color: gray;
+    border: 2px solid gray;
+    &:hover{
+        color: gray;
     }
 }
 
@@ -85,10 +93,10 @@ nav {
 }
 
 .gradientTitle {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 3%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 97%);
+    background: map-get($gradients, titleGradient);
 }
 
-#footer {
+footer {
     background-color: rgba(0, 255, 255, 0.323);
 }
 

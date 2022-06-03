@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
 }
 
-.customBtn {
+.customBtn, .cardBtn, .greyBtn {
   min-width: 130px;
   color: #fff;
   font-weight: bold;
@@ -22,20 +22,25 @@ body {
   background: aqua;
 }
 
-.customBtn:hover {
-  background: white;
+.customBtn:hover, .cardBtn:hover, .greyBtn:hover {
+  background-color: white;
   color: aqua;
 }
 
-.customBtn.cardBtn {
+.cardBtn {
   width: 100.1%;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin: 0 -1px -1px -1px;
 }
 
-.customBtn.bg-secondary:hover {
-  background-color: white !important;
+.greyBtn {
+  background-color: gray;
+  border: 2px solid gray;
+}
+
+.greyBtn:hover {
+  color: gray;
 }
 
 .mainTitle {
@@ -100,7 +105,7 @@ nav .navbar-toggler-icon {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 3%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 97%);
 }
 
-#footer {
+footer {
   background-color: rgba(0, 255, 255, 0.323);
 }
 

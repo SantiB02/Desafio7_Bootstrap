@@ -14,7 +14,7 @@
     border: 3px solid aqua;
     border-radius: 20px;
     .title{
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.463) 0%, rgba(9, 147, 147, 0.463) 50%, rgba(0, 0, 0, 0.463) 100%);
+        background: map-get($gradients, cardGradient);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -33,14 +33,12 @@
     }
     .carousel-control-next-icon, .carousel-control-prev-icon{
         background-color: black;
-        background-size: 54px 54px;
-        padding: 25px;
+        @include iconSizes(54px 54px, 25px);
         border-radius: 30px;
         background-position: center center;
         background-repeat: no-repeat;
         @media all and (max-width: 576px) {
-            background-size: 24px 24px;
-            padding: 10px;
+            @include iconSizes(24px 24px, 10px);
         }
     }
     .carousel-control-next-icon{
