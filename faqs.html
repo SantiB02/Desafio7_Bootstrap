@@ -15,7 +15,7 @@
     <header class="container-fluid d-none d-lg-flex justify-content-lg-center mainLogo">
         <a href="index.html" class="text-decoration-none d-flex flex-column align-items-center">
             <img class="logo img-fluid" src="img/KronosLOGO.png" alt="Kronos Coding Solutions logo">
-            <h1 class="mainTitle aqua fs-1">Kronos Coding Solutions</h1>
+            <h1 class="mainTitle aqua fs-3">Kronos Coding Solutions</h1>
         </a>
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow">
@@ -37,7 +37,7 @@
                         <a class="nav-link text-white" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active aqua" aria-current="page" href="#">FAQs</a>
+                        <a id="activeLink" class="nav-link" aria-current="page" href="#">FAQs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contactus.html">Contact Us</a>
@@ -62,58 +62,66 @@
         <h1 class="text-white mainTitle fs-1 pt-3 text-center fw-bold">Frequently Asked Questions</h1>
         <div class="container-md accordion pb-5" id="questions">
             <div class="accordion-item border-0">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        How does it work?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#questions">
-                    <div class="accordion-body">
-                        <p class="text-white fw-light">When you hire our services, an email with your login information will be immediately sent to you. You will then enter that username and password into our <span class="fw-bold aqua">Kronos X</span> platform, which is used to access all of your active services. It's never been easier!</p>
+                <div class="faqItem">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How does it work?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            <p class="text-white fw-light">When you hire our services, an email with your login information will be immediately sent to you. You will then enter that username and password into our <span class="fw-bold aqua">Kronos X</span> platform, which is used to access all of your active services. It's never been easier!</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="accordion-item border-0">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Can I try a service first?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#questions">
-                    <div class="accordion-body">
-                        <p class="text-white fw-light">Absolutely! In our <a class="aqua" href="#">Plans</a> section, you will find a 7-day trial with limited access to our Code Delivery and Code Counseling services, which will enable you to acquire first hand experience on how we work and the quality of our services.</p>
+                <div class="faqItem">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Can I try a service first?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            <p class="text-white fw-light">Absolutely! In our <a class="aqua" href="#">Plans</a> section, you will find a 7-day trial with limited access to our Code Delivery and Code Counseling services, which will enable you to acquire first hand experience on how we work and the quality of our services.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="accordion-item border-0">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Can I send unlimited code?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#questions">
-                    <div class="accordion-body">
-                        <p class="text-white fw-light">While helping clients with their coding needs is our main objective, we don't intend to replace programmers and their valuable work. That's the reason our Code Delivery service has a limit on how many lines of code you can send through our platform. If you want to learn more about us and our work ethics, you can visit the <a class="aqua" href="aboutus.html#who">About Us</a> section.</p>
+                <div class="faqItem">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I send unlimited code?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            <p class="text-white fw-light">While helping clients with their coding needs is our main objective, we don't intend to replace programmers and their valuable work. That's the reason our Code Delivery service has a limit on how many lines of code you can send through our platform. If you want to learn more about us and our work ethics, you can visit the <a class="aqua" href="aboutus.html#who">About Us</a> section.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="accordion-item border-0">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Are refunds available?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#questions">
-                    <div class="accordion-body">
-                        <p class="text-white fw-light">If you believe a service doesn't meet your demands, you can ask for a refund in the 'Payments' section of our <span class="fw-bold aqua">Kronos X</span> platform.</p>
+                <div class="faqItem">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Are refunds available?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            <p class="text-white fw-light">If you believe a service doesn't meet your demands, you can ask for a refund in the 'Payments' section of our <span class="fw-bold aqua">Kronos X</span> platform.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,12 +147,12 @@
             <div id="legal" class="offset-1 col d-flex justify-content-center mt-2">
                 <ul class="list-unstyled">
                     <li><a href="aboutus.html">About</a></li>
-                    <li><a href="">Work Here</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="wip.html">Work Here</a></li>
+                    <li><a href="wip.html">Privacy Policy</a></li>
+                    <li><a href="wip.html">Terms of Service</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="">Cookie Settings</a></li>
-                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="wip.html">Cookie Settings</a></li>
+                    <li><a href="wip.html">Cookie Policy</a></li>
                 </ul>
             </div>
         </div>

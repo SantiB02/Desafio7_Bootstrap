@@ -5,12 +5,12 @@
         background-color: $textBG;
         text-align: justify;
     }
-    .accordion-item{
-        border-left: 1px solid $mainColor !important;
-        border-right: 1px solid $mainColor !important;
-        border-bottom: 1px solid $mainColor !important;
+    .faqItem{
+        border-left: 1px solid $mainColor;
+        border-right: 1px solid $mainColor;
+        border-bottom: 1px solid $mainColor;
         &:first-child{
-            border-top: 1px solid $mainColor !important;
+            border-top: 1px solid $mainColor;
         }
     }
     .accordion-button{

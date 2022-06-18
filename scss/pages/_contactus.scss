@@ -28,3 +28,8 @@
         background-color: rgb(6, 178, 178) !important;
     }
 }
+
+#modalContent {
+    background-color: $textBG;
+    border: 2px solid $mainColor;
+}

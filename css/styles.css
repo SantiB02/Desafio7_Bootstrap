@@ -68,13 +68,17 @@ nav .navbar-toggler-icon {
   background-image: url(../img/menu-icon.png) !important;
 }
 
+#activeLink {
+  color: aqua;
+}
+
 .blur {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 80px;
 }
 
 .phoneLogo {
@@ -82,7 +86,7 @@ nav .navbar-toggler-icon {
 }
 
 .aqua {
-  color: aqua !important;
+  color: aqua;
 }
 
 .grey {
@@ -155,7 +159,7 @@ footer {
 }
 
 #clientsCarousel .carousel-control-next, #clientsCarousel .carousel-control-prev {
-  bottom: 80px !important;
+  bottom: 80px;
 }
 
 #clientsCarousel .carousel-control-next-icon, #clientsCarousel .carousel-control-prev-icon {
@@ -192,20 +196,25 @@ footer {
   color: #9e9e9e;
 }
 
+#example iframe {
+  height: 400px;
+  width: 100%;
+}
+
 /* The following code corresponds to faqs.html */
 #questions .accordion-body {
   background-color: #154a4a;
   text-align: justify;
 }
 
-#questions .accordion-item {
-  border-left: 1px solid aqua !important;
-  border-right: 1px solid aqua !important;
-  border-bottom: 1px solid aqua !important;
+#questions .faqItem {
+  border-left: 1px solid aqua;
+  border-right: 1px solid aqua;
+  border-bottom: 1px solid aqua;
 }
 
-#questions .accordion-item:first-child {
-  border-top: 1px solid aqua !important;
+#questions .faqItem:first-child {
+  border-top: 1px solid aqua;
 }
 
 #questions .accordion-button {
@@ -279,6 +288,11 @@ footer {
 
 .form-check-input:checked {
   background-color: #06b2b2 !important;
+}
+
+#modalContent {
+  background-color: #154a4a;
+  border: 2px solid aqua;
 }
 
 /* The following code corresponds to aboutus.html */

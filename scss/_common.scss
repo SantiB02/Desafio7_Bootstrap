@@ -61,12 +61,16 @@ nav {
     }
 }
 
+#activeLink {
+    color: $mainColor;
+}
+
 .blur {
     backdrop-filter: blur(4px);
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 80px;
 }
 
 .phoneLogo {
@@ -74,7 +78,7 @@ nav {
 }
 
 .aqua {
-    color: $mainColor !important;
+    color: $mainColor;
 }
 
 .grey {
