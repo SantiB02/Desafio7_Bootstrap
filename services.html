@@ -23,10 +23,10 @@
             <a class="navbar-brand d-lg-none w-25" href="index.html">
                 <img class="img-fluid phoneLogo" src="img/KronosLOGO.png" alt="Kronos logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button id="navToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span id="navTogglerIcon" class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse container-lg" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto justify-content-between mb-2 mb-lg-0 fs-4 w-100">
@@ -58,57 +58,62 @@
         </div>
     </nav>
 
-    <div class="gradientTitle container-fluid d-flex justify-content-center align-content-center mt-5 mb-md-5 blur">
-        <h2 class="fs-1 text-white fw-bold mainTitle mb-0 py-2">Featured Services:</h2>
-    </div>
-    <section id="featuredServices" class="col-11 mx-auto row g-0">
-        <article class="service col-12 col-md-5 my-5 d-flex flex-column justify-content-between">
-            <h2 class="aqua fs-1 text-center title fw-bold">CC: Code Counseling</h2>
-            <p class="text-white px-3 fw-light">Clients with programming difficulties can convey them to our skilled
-                programming team via Zoom or a brief email. The issue at hand will become our top priority, as we assess the
-                problem and provide you with a path to the most effective solution.<br>This service was designed to assist you with all your coding needs: from improving SEO for your website to brainstorming new functions for your code, we got you covered. When you feel like you are going in circles with complex code, you can just log into our state-of-the-art <span class="fw-bold aqua">Kronos X</span> platform and schedule a Zoom call with one of our team members. If you are interested in this service, visit our <a class="aqua" href="#">Plans</a> section or click the 'Hire' button below:</p>
-            <div class="text-center">
-                <p class="fs-3 text-white">PRICE: <span class="priceTag text-warning rounded-3 p-2 ">49.99 USD /
-                        month</span></p>
-            </div>
-            <a href="services.html"><button class="customBtn cardBtn">HIRE</button></a>
-        </article>
-        <article class="service col-12 offset-md-2 col-md-5 my-md-5 d-flex flex-column justify-content-between">
-            <h2 class="aqua fs-1 text-center title fw-bold">CD: Code Delivery</h2>
-            <p class="text-white px-3 fw-light">Our experts realize your time is precious. That's why we offer our
-                Code Delivery service, which enables you to send blocks of code through our platform for us to work
-                on. Bug fixing, problem solving; you name it. Just press 'Send' and let us do the heavy work for
-                you.<br>Clients can send their work through our modern <span class="fw-bold aqua">Kronos X</span> platform and expect delivery within the discussed deadline. We ensure clean and efficient code deliveries by using the best programming practices. If you are interested in this service, visit our <a class="aqua" href="#">Plans</a> section or click the 'Hire' button below:</p>
-            <div class="text-center">
-                <p class="fs-3 text-white">PRICE: <span class="priceTag text-warning rounded-3 p-2">59.99 USD /
-                        month</span></p>
-            </div>
-            <a href="services.html"><button class="customBtn cardBtn ">HIRE</button></a>
-        </article>
+    <section>
+        <div class="gradientTitle container-fluid text-center mt-5 mb-md-5 blur">
+            <h2 class="fs-1 text-white fw-bold mainTitle mb-0 py-2">Featured Services:</h2>
+        </div>
+        <div id="featuredServices" class="col-11 mx-auto row g-0">
+            <article class="service col-12 col-md-5 my-5 d-flex flex-column justify-content-between">
+                <h2 class="aqua fs-1 text-center title fw-bold">CC: Code Counseling</h2>
+                <p class="text-white px-3 fw-light">Clients with programming difficulties can convey them to our skilled
+                    programming team via Zoom or a brief email. The issue at hand will become our top priority, as we assess the
+                    problem and provide you with a path to the most effective solution.<br>This service was designed to assist you with all your coding needs: from improving SEO for your website to brainstorming new functions for your code, we got you covered. When you feel like you are going in circles with complex code, you can just log into our state-of-the-art <span class="fw-bold aqua">Kronos X</span> platform and schedule a Zoom call with one of our team members. If you are interested in this service, visit our <a class="aqua" href="wip.html">Plans</a> section or click the 'Hire' button below:</p>
+                <div class="text-center">
+                    <p class="fs-3 text-white">PRICE: <span class="priceTag text-warning rounded-3 p-2 ">49.99 USD /
+                            month</span></p>
+                </div>
+                <a href="wip.html"><button class="customBtn cardBtn">HIRE</button></a>
+            </article>
+            <article class="service col-12 offset-md-2 col-md-5 my-md-5 d-flex flex-column justify-content-between">
+                <h2 class="aqua fs-1 text-center title fw-bold">CD: Code Delivery</h2>
+                <p class="text-white px-3 fw-light">Our experts realize your time is precious. That's why we offer our
+                    Code Delivery service, which enables you to send blocks of code through our platform for us to work
+                    on. Bug fixing, problem solving; you name it. Just press 'Send' and let us do the heavy work for
+                    you.<br>Clients can send their work through our modern <span class="fw-bold aqua">Kronos X</span> platform and expect delivery within the discussed deadline. We ensure clean and efficient code deliveries by using the best programming practices. If you are interested in this service, visit our <a class="aqua" href="wip.html">Plans</a> section or click the 'Hire' button below:</p>
+                <div class="text-center">
+                    <p class="fs-3 text-white">PRICE: <span class="priceTag text-warning rounded-3 p-2">59.99 USD /
+                            month</span></p>
+                </div>
+                <a href="wip.html"><button class="customBtn cardBtn ">HIRE</button></a>
+            </article>
+        </div>
     </section>
 
-    <div class="gradientTitle container-fluid d-flex justify-content-center align-content-center mt-5 mb-md-5 blur">
-        <h2 class="fs-1 text-white fw-bold mb-0 mainTitle py-2">Exclusive Services:</h2>
-    </div>
-    <section id="exclusiveServices" class="col-11 mx-auto row g-0">
-        <article class="service col-12 col-md-5 my-5 d-flex flex-column justify-content-between">
-            <h2 class="aqua fs-1 text-center title fw-bold">QA: Quality Assurance</h2>
-            <p class="text-white px-3 fw-light">Clients with the <span class="text-warning">Gold</span> subscription will additionally receive QA testing for their respective products. Any feedback regarding Quality Assurance will be sent to you via our <span class="fw-bold aqua">Kronos X</span> platform chat or communicated through a Zoom call.<br>We believe that quality means business growth. That's why we know the market's standards and how to adapt them to your project for a vastly superior user experience.</p>
-            <p class="ms-2 exclusiveInfo"><span class="text-danger fs-5">*</span>This service is only available in a
-                bundle.</p>
-            <a href="services.html"><button class="customBtn cardBtn">SEE PLANS</button></a>
-        </article>
-        <article class="service col-12 offset-md-2 col-md-5 my-md-5 d-flex flex-column justify-content-between">
-            <h2 class="aqua fs-1 text-center title fw-bold">DA: Design Assessment</h2>
-            <p class="text-white px-3 fw-light">Clients with the Silver subscription will additionally receive Design Assessment for their respective products. Any feedback regarding DA will be sent to you via our <span class="fw-bold aqua">Kronos X</span> platform chat or communicated through a Zoom call.<br>Studies show that users will stay longer in a visually appealing website. We know this, and that's why our team members aren't just programmers; some of them are Graphic Designers with a passion for finding the perfect layout for your product. </p>
-            <p class="ms-2 exclusiveInfo"><span class="text-danger fs-5">*</span>This service is only available in a
-                bundle.</p>
-            <a href="services.html"><button class="customBtn cardBtn ">SEE PLANS</button></a>
-        </article>
+    <section>
+        <div class="gradientTitle container-fluid text-center mt-5 mb-md-5 blur">
+            <h2 class="fs-1 text-white fw-bold mb-0 mainTitle py-2">Exclusive Services:</h2>
+        </div>
+        <div id="exclusiveServices" class="col-11 mx-auto row g-0">
+            <article class="service col-12 col-md-5 my-5 d-flex flex-column justify-content-between">
+                <h2 class="aqua fs-1 text-center title fw-bold">QA: Quality Assurance</h2>
+                <p class="text-white px-3 fw-light">Clients with the <span class="text-warning">Gold</span> subscription will additionally receive QA testing for their respective products. Any feedback regarding Quality Assurance will be sent to you via our <span class="fw-bold aqua">Kronos X</span> platform chat or communicated through a Zoom call.<br>We believe that quality means business growth. That's why we know the market's standards and how to adapt them to your project for a vastly superior user experience.</p>
+                <p class="ms-2 exclusiveInfo"><span class="text-danger fs-5">*</span>This service is only available in a
+                    bundle.</p>
+                <a href="wip.html"><button class="customBtn cardBtn">SEE PLANS</button></a>
+            </article>
+            <article class="service col-12 offset-md-2 col-md-5 my-md-5 d-flex flex-column justify-content-between">
+                <h2 class="aqua fs-1 text-center title fw-bold">DA: Design Assessment</h2>
+                <p class="text-white px-3 fw-light">Clients with the Silver subscription will additionally receive Design Assessment for their respective products. Any feedback regarding DA will be sent to you via our <span class="fw-bold aqua">Kronos X</span> platform chat or communicated through a Zoom call.<br>Studies show that users will stay longer in a visually appealing website. We know this, and that's why our team members aren't just programmers; some of them are Graphic Designers with a passion for finding the perfect layout for your product. </p>
+                <p class="ms-2 exclusiveInfo"><span class="text-danger fs-5">*</span>This service is only available in a
+                    bundle.</p>
+                <a href="wip.html"><button class="customBtn cardBtn">SEE PLANS</button></a>
+            </article>
+        </div>
     </section>
 
     <section id="example" class="col-10 col-md-8 col-lg-6 mx-auto grey my-5 blur">
         <div class="p-3 text-center">
+            <h2 class="fs-1 text-white mainTitle text-center">An example of our work:</h2>
             <p class="text-white fw-light">Here at Kronos Coding Solutions, we believe in building a bridge of trust
                 between our clients and our company. That's why we encourage you to take a quick look at this 'virtual
                 tour' of our different services:</p>

@@ -59,13 +59,13 @@ nav {
           backdrop-filter: blur(10px);
 }
 
-nav .navbar-toggler {
-  border-color: aqua !important;
-  background-color: black !important;
+nav #navToggler {
+  border-color: aqua;
+  background-color: black;
 }
 
-nav .navbar-toggler-icon {
-  background-image: url(../img/menu-icon.png) !important;
+nav #navTogglerIcon {
+  background-image: url(../img/menu-icon.png);
 }
 
 #activeLink {

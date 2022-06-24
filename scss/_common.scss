@@ -52,11 +52,11 @@ body {
 nav {
     background-color: rgba(46, 45, 45, 0.474);
     backdrop-filter: blur(10px);
-    .navbar-toggler{
-        border-color: $mainColor !important;
-        background-color: black !important;
-        &-icon{
-            background-image: url(../img/menu-icon.png)!important;
+    #navToggler{
+        border-color: $mainColor;
+        background-color: black;
+        &Icon{
+            background-image: url(../img/menu-icon.png);
         }
     }
 }
